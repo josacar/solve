@@ -50,6 +50,8 @@ module Solve
       @resolver = Molinillo::Resolver.new(self, self)
     end
 
+    def indicate_progress; end
+  
     # The problem demands given as Demand model objects
     # @return [Array<Solve::Demand>]
     def demands
